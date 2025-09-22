@@ -12,7 +12,7 @@ WORKDIR /app
 
 COPY --from=build /app/package*.json ./
 
-RUN npm ci --omit=dev --prefix ./build
+RUN npm install --omit=dev --prefix ./build
 
 EXPOSE 3005
 CMD ["node", "./build"]
