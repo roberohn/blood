@@ -15,4 +15,4 @@ COPY --from=build /app/package*.json ./
 RUN npm install --omit=dev --prefix ./build
 
 EXPOSE 3005
-CMD ["node", "./build"]
+CMD ["node", "index.js"]
