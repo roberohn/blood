@@ -1,13 +1,13 @@
-FROM node:22-alpine as build
-WORKDIR /src
+FROM node:22-alpine AS build
+WORKDIR /app
 COPY package*.json .
 RUN npm install
 COPY . .
 RUN npm run build
 
-FROM node:22-alpine as deploy
-WORKDIR /src
-COPY --from=build /src/package*.json .
-COPY --from=build /src/build .
+FROM node:22-alpine AS deploy
+WORKDIR /app
+COPY --from=build /app/package*.json .
+COPY --from=build /app/build .
 EXPOSE 3005
 CMD ["node", "build"]
