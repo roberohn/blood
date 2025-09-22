@@ -15,5 +15,6 @@ COPY --from=build /app/build ./build
 
 RUN npm install
 
+ENV PORT=3005
 EXPOSE 3005
 CMD ["node", "build/index.js"]
