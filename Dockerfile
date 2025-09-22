@@ -15,4 +15,4 @@ COPY --from=build /app/package*.json .
 RUN npm install
 
 EXPOSE 3005
-CMD ["node", "index.js"]
+CMD ["node", "build/index.js"]
