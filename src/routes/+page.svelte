@@ -5,7 +5,7 @@
 	let milestone;
 	let ratio;
 
-	donationsMade = 10;
+	donationsMade = 11;
 	milestone = 15;
 
 	ratio = donationsMade / milestone;
@@ -13,5 +13,5 @@
 
 <div class="flex h-screen w-screen items-center justify-center">
 	<PictorialFraction width={264.5} height={264.5} {ratio} />
-	<p class="text-gray-50">10/15 donations in 3rd milestone</p>
+	<p class="text-gray-50">{donationsMade}/{milestone} donations in 3rd milestone</p>
 </div>
