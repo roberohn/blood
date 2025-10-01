@@ -2,7 +2,11 @@
 	// https://codesandbox.io/p/sandbox/svelte-svg-pictorial-fraction-f1hv2
 	export let width;
 	export let height;
-	export let ratio;
+	export let milestone;
+	export let donationsMade;
+
+	// Calculate the ratio inside the component
+	$: ratio = donationsMade / milestone;
 
 	// offset should help the bar "fill" from the bottom
 	$: offsetY = height - height * ratio;
