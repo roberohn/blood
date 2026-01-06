@@ -10,7 +10,7 @@
 	width = dimension;
 	height = dimension;
 
-	donationsMade = 11;
+	donationsMade = 12;
 </script>
 
 <div class="grid h-screen grid-cols-1 items-center justify-items-center gap-4 md:grid-cols-3">
