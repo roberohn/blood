@@ -33,7 +33,7 @@
 </script>
 
 <!-- Header -->
-<main class="flex h-screen flex-col overflow-hidden bg-zinc-950 px-6 py-8">
+<main class="flex flex-col overflow-hidden px-6 py-8">
 	<header class="text-center">
 		<p class="mb-1 text-xs tracking-widest text-zinc-500 uppercase">Donation Journey</p>
 		<h1 class="text-3xl font-semibold tracking-tight text-zinc-100">Blood Donation Milestones</h1>
@@ -41,7 +41,7 @@
 
 	<!-- Grid -->
 	<div
-		class="grid h-screen grid-cols-1 items-center justify-items-center gap-4 text-gray-50 md:grid-cols-3"
+		class="mt-6 grid grid-cols-1 items-center justify-items-center gap-4 text-gray-50 md:grid-cols-3"
 	>
 		{#each milestones as m (m.tier)}
 			{@const complete = m.donationsMade >= m.milestone}
