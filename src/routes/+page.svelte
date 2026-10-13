@@ -10,7 +10,7 @@
 	width = dimension;
 	height = dimension;
 
-	donationsMade = 14;
+	donationsMade = 15;
 
 	const milestones = [
 		{ donationsMade: 0, milestone: 0, label: 'Registered', tier: '1st' },
